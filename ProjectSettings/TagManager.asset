@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Overworld
+  - City
+  - Town
+  - RandomEncounter
+  - BattleScene
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Background
+  - Water
+  - UI
+  - EncounterLayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 2125471301
+    locked: 0
+  - name: Ground Detail
+    uniqueID: 3013502935
+    locked: 0
+  - name: RandomEncounters
+    uniqueID: 915868569
+    locked: 0
+  - name: Shadows
+    uniqueID: 3646616203
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Props
+    uniqueID: 743738697
+    locked: 0
+  - name: Obstacles
+    uniqueID: 2786296197
+    locked: 0
+  - name: Foreground
+    uniqueID: 3067698299
+    locked: 0
