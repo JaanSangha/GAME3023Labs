@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 6474686146499863737}
   - component: {fileID: 3628995290026630843}
   - component: {fileID: 1368478937}
+  - component: {fileID: 7069365344389708822}
   m_Layer: 0
   m_Name: PlayerOne
   m_TagString: Untagged
@@ -333,10 +334,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 519420031}
-  BattleScene: {fileID: 0}
+  BattleScene: {fileID: 8635272300220650257, guid: 792605d79a630c842829d4b222449e0e, type: 3}
   moveSpeed: 1
   rigidbody: {fileID: 6474686146499863736}
   canMove: 1
+  yDirection: 0
   randomEncounterLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -416,3 +418,22 @@ MonoBehaviour:
   m_ShapePathHash: 1837293538
   m_Mesh: {fileID: 0}
   m_InstanceId: -41628
+--- !u!95 &7069365344389708822
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6474686146499863741}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eb979fdff2caa5740af84b5aecb29188, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
