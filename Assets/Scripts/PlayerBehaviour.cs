@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class PlayerBehaviour : MonoBehaviour
 {
     public Camera playerCamera;
-    public GameObject BattleScene;
+   // public GameObject BattleScene;
+    public GameObject BattleScenePrefab;
 
     [SerializeField]
     private float moveSpeed = 1.0f;
@@ -27,8 +28,8 @@ public class PlayerBehaviour : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
-        BattleScene = GameObject.FindGameObjectWithTag("BattleScene");
-        BattleScene.SetActive(false);
+       // BattleScene = GameObject.FindGameObjectWithTag("BattleScene");
+        //BattleScene.SetActive(false);
     }
 
     // Update is called once per frame
@@ -42,16 +43,16 @@ public class PlayerBehaviour : MonoBehaviour
         //rigidbody.velocity = new Vector2(inputX * moveSpeed, inputY * moveSpeed);
         
 
-        if (BattleScene.activeSelf)
-        {
-            canMove = false;
-            Time.timeScale = 0.0f;
-        }
-        else
-        {
-            canMove = true;
-            Time.timeScale = 1.0f;
-        }
+        //if (BattleScene.activeSelf)
+        //{
+        //    canMove = false;
+        //    Time.timeScale = 0.0f;
+        //}
+        //else
+        //{
+        //    canMove = true;
+        //    Time.timeScale = 1.0f;
+        //}
 
         playerAnimator.SetFloat("yVelocity", rigidbody.velocity.y);
         playerAnimator.SetFloat("xVelocity", rigidbody.velocity.x);
@@ -92,8 +93,10 @@ public class PlayerBehaviour : MonoBehaviour
             if (p <= 8)
             {
                 //canMove = false;
-                BattleScene.SetActive(true);
+                //BattleScene.SetActive(true);
+                Instantiate(BattleScenePrefab, new Vector3(0, 0, 0), Quaternion.identity);
                 Debug.Log("Encounter");
+                canMove = false;
             }
         }
 
